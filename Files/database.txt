@@ -1,0 +1,39 @@
+Name: Piyush GARG
+Student ID: S3218012
+
+Name: Dibayendun N. Dey
+Student ID: S3224807
+
+
+Q1. We choose the recommended database schema because….
+
+Ans1. The database schema which was being provided was good for designing the application and was appropriate 			according to the accomplishing the tasks . But still there were some of the issues with the schema which we 	need to have a change or add some extra fields such as Status, PatientId and many others
+
+Q2. We changed the schema because ….
+
+Ans2. We changed the schema of: 
+	1. Visit Table
+	2. Bed Table
+	3. Patient Table
+      Because there was a need to provide some extra fields or change of value types which were confusing, such 		BedId, DoctorId, PatientId; because the changes were making a complete sense of 					exactly what type this ID it is of? And there was also need to add some of the extra Fields within the 			database such as Status, PatientID in Visit Table so that we can exactly know whether the particular 		patient has been Discharged or not.
+
+Q3. We added the following constraints because….
+
+Ans3. We had added
+	1. Status--> Visit Table
+	2. PatientId--> Visit Table
+      Because the Visit table is the most visiting table in whole application and if we do not make these changes 		then the data fetching will be a great problem and could be messed up.
+
+
+Q4. We encountered the following problems with the database
+	design….
+
+Ans4. While developing the Application we encountered the following problems as:
+	1. Fetching the PatientID on the basis of their DateOfVisit or DateOfDischarge IS NULL
+	   If we haven't not make any changes in Visit table then we would not be able to meet the 				requirement.
+
+	2. With the help of LINQ we were able to get the records from the database but at the time of Inserting 			or processing the results, it was showing some kind of ISerial Errors, which were being solved by 			putting those values in Drop Down List and then access it.
+
+
+
+

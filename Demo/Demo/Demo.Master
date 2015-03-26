@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Demo.master.cs" Inherits="Demo.Demo" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <p>
+        &nbsp;</p>
+    <div>
+        
+    </div>
+    <p>
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/STV_Logo.gif" 
+            
+            
+            style="z-index: 1; left: 59px; top: 33px; position: absolute; height: 55px; width: 847px" /></p>
+    <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnAboutUs" runat="server" BackColor="White" BorderStyle="None" 
+            Font-Bold="True" Font-Size="Small" ForeColor="#D0E0EF" 
+            style="z-index: 1; left: 51px; top: 172px; position: absolute; width: 78px" 
+            Text="About Us" onclick="btnAboutUs_Click" />
+        <asp:Button ID="btnHome" runat="server" BackColor="White" BorderStyle="None" 
+            Font-Bold="True" ForeColor="#D0E0EF" onclick="btnHome_Click" 
+            style="z-index: 1; left: 53px; top: 135px; position: absolute" 
+            Text="Home" />
+        <asp:Image ID="Image5" runat="server" ImageUrl="~/Images/line.gif" 
+            style="z-index: 1; left: 60px; top: 157px; position: absolute" />
+    </p>
+    <p>
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        </p>
+    <p>
+        <asp:Button ID="btnMission" runat="server" BackColor="White" BorderStyle="None" 
+            Font-Bold="True" Font-Size="Small" ForeColor="#D0E0EF" 
+            style="z-index: 1; left: 57px; top: 209px; position: absolute; width: 130px; height: 22px" 
+            Text="Mission and Values" onclick="btnMission_Click" />
+        
+    <asp:Button ID="btnLocations" runat="server" BackColor="White" 
+        BorderStyle="None" Font-Bold="True" ForeColor="#D0E0EF" 
+        onclick="btnLocations_Click" 
+        style="z-index: 1; left: 50px; top: 245px; position: absolute" 
+        Text="Locations" />
+        
+    <p>
+        <asp:Image ID="Image6" runat="server" ImageUrl="~/Images/line.gif" 
+            style="z-index: 1; left: 60px; top: 193px; position: absolute" />
+    </p>
+    <p>
+        <asp:Button ID="btnContacts" runat="server" BackColor="White" 
+            BorderStyle="None" Font-Bold="True" ForeColor="#D0E0EF" 
+            onclick="btnContacts_Click" 
+            style="z-index: 1; left: 52px; top: 283px; position: absolute" 
+            Text="Contacts" />
+    </p>
+    <p>
+        <asp:Image ID="Image7" runat="server" ImageUrl="~/Images/line.gif" 
+            style="z-index: 1; left: 60px; top: 229px; position: absolute" />
+    </p>
+    <p>
+        <asp:Image ID="Image8" runat="server" ImageUrl="~/Images/line.gif" 
+            style="z-index: 1; left: 60px; top: 265px; position: absolute" />
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <asp:Image ID="Image9" runat="server" ImageUrl="~/Images/line.gif" 
+            style="z-index: 1; left: 60px; top: 303px; position: absolute" />
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/Bprder.jpg" 
+        
+        
+        style="z-index: 1; left: 57px; top: 736px; position: absolute; height: 29px; width: 845px" />
+    <asp:Image ID="Image4" runat="server" ImageUrl="~/Images/St.VINCENTS_Logo.gif" 
+        
+        style="z-index: 1; left: 63px; top: 699px; position: absolute; width: 653px" />
+    <asp:Label ID="Label1" runat="server" Font-Bold="True" ForeColor="#999999" 
+        style="z-index: 1; left: 433px; top: 742px; position: absolute" 
+        Text="©2010 Piyush Garg"></asp:Label>
+    </form>
+</body>
+</html>

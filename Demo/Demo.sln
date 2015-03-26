@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{B0927473-3F51-4809-8F6E-69FD037A1F42}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HospitalManagementStstem", "HospitalManagementStstem\HospitalManagementStstem.vdproj", "{B594B384-175A-4156-84F4-6DDE0BBCCA78}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Demo5", "Demo5\Demo5.vdproj", "{B4D263F3-9F4A-44B7-901E-6DAD228763D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0927473-3F51-4809-8F6E-69FD037A1F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0927473-3F51-4809-8F6E-69FD037A1F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0927473-3F51-4809-8F6E-69FD037A1F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0927473-3F51-4809-8F6E-69FD037A1F42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B594B384-175A-4156-84F4-6DDE0BBCCA78}.Debug|Any CPU.ActiveCfg = Debug
+		{B594B384-175A-4156-84F4-6DDE0BBCCA78}.Release|Any CPU.ActiveCfg = Release
+		{B4D263F3-9F4A-44B7-901E-6DAD228763D1}.Debug|Any CPU.ActiveCfg = Debug
+		{B4D263F3-9F4A-44B7-901E-6DAD228763D1}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

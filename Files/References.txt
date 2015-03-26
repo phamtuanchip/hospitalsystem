@@ -1,0 +1,30 @@
+References:
+
+Web Sites:
+
+1. http://www.womenscollegehospital.ca/Privacy-Policy.html
+
+2. http://msdn.microsoft.com/en-us/library/ms998267.aspx
+
+3. http://regexlib.com/DisplayPatterns.aspx?cattabindex=6&categoryId=7
+
+4. http://www.asp.net/%28S%28pdfrohu0ajmwt445fanvj2r3%29%29/learn/data-access/tutorial-17-vb.aspx
+
+5. http://www.asp.net/%28S%28pdfrohu0ajmwt445fanvj2r3%29%29/learn/data-access/tutorial-19-vb.aspx
+
+6. http://www.dotnetspider.com/resources/5096-Encryption-decryption-sample.aspx
+
+7. www.svhm.org.au/
+
+
+Books:
+
+1. Professional ASP.NET 3.5 In C# and VB (Bill Evjen, Scott Hanselman, Devin Rader)
+2. Microsoft C# Programming for the absolute Biggenners
+
+
+
+NOTE:
+I had used the St. Vincent's Website as a demo of the application.
+Only few part has been taken from St. Vincent's Web Site for the Educational Purposes.
+

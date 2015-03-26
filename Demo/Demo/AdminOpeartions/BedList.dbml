@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="Assignment2" Class="BedListDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=localhost;Initial Catalog=Assignment2;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Assignment2ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Bed" Member="Beds">
+    <Type Name="Bed">
+      <Column Name="Id" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PatientId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BedName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RatePerDay" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BedType" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Available_Bed_List" Method="Available_Bed_List">
+    <ElementType Name="Available_Bed_ListResult">
+      <Column Name="Id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BedName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RatePerDay" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BedType" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.update_Bed_List" Method="update_Bed_List">
+    <Parameter Name="id" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="bedname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="rate" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Insert_Bed_Record" Method="Insert_Bed_Record">
+    <Parameter Name="id" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="rate" Type="System.Int32" DbType="Int" />
+    <Parameter Name="bedtype" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Available_In_Patients" Method="Available_In_Patients">
+    <ElementType Name="Available_In_PatientsResult">
+      <Column Name="PatientId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PatientType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BedId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DoctorId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateOfVisit" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DateOfDischarge" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.In_Patients_Id" Method="In_Patients_Id">
+    <Parameter Name="value" Type="System.Int32" DbType="Int" />
+    <ElementType Name="In_Patients_IdResult">
+      <Column Name="PatientId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PatientType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BedId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DoctorId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateOfVisit" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DateOfDischarge" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Get_In_Patient_Visit_date" Method="Get_In_Patient_Visit_date">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Get_In_Patient_Visit_dateResult">
+      <Column Name="DateOfVisit" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Get_BedID_In_Patients" Method="Get_BedID_In_Patients">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Get_BedID_In_PatientsResult">
+      <Column Name="BedId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Get_Bed_Rate_In_Patients" Method="Get_Bed_Rate_In_Patients">
+    <Parameter Name="bedid" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="Get_Bed_Rate_In_PatientsResult">
+      <Column Name="RatePerDay" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Get_In_Patient_Name" Method="Get_In_Patient_Name">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Get_In_Patient_NameResult">
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Get_Description_In_Patient" Method="Get_Description_In_Patient">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Get_Description_In_PatientResult">
+      <Column Name="Treatment" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Update_Patient_In_Vists" Method="Update_Patient_In_Vists">
+    <Parameter Name="patienttype" Type="System.Int32" DbType="Int" />
+    <Parameter Name="discharge" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

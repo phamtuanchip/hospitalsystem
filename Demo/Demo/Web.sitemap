@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~\\Home.aspx" title="Home"  description="">
+    <siteMapNode url="~\\Presentation\\AboutUs.aspx" title="About Us"  description="" />
+    <siteMapNode url="~\\Presentation\\Mission.aspx" title="Mission and Values"  description="" />
+    <siteMapNode url="~\\Presentation\\Locations.aspx" title="Locations"  description="" />
+    <siteMapNode url="~\\Presentation\\Contact.aspx" title="Contact Us"  description="" />
+    <siteMapNode url="~\\Presentation\\Patients.aspx" title="Patients"  description="" />
+    <siteMapNode url="~\\Presentation\\Visitors.aspx" title="Visitors"  description="" />
+    <siteMapNode url="~\\Presentation\\Volunteers.aspx" title="Volunteers"  description="" />
+    <siteMapNode url="~\\Presentation\\PrivacyPolicy.aspx" title="Privacy Policy"  description="" />
+
+    <siteMapNode title="Booking Staff">
+      <siteMapNode url="~\\BookingStaff\\Login.aspx" title="Login"  description="" />
+      <siteMapNode url="~\\BookingStaff\\StaffOptions.aspx" title="Staff Options"  description="" />
+      <siteMapNode title="Booking Staff Operations">
+        <siteMapNode url="~\\BookingStaff\\StaffDataOperations\\DoctorList.aspx" title="Doctor List"  description="" />
+        <siteMapNode url="~\\BookingStaff\\StaffDataOperations\\PatientList.aspx" title="Patient List"  description="" />
+        <siteMapNode url="~\\BookingStaff\\StaffDataOperations\\PatientVisits.aspx" title="Patient Visits"  description="" />
+        <siteMapNode url="~\\BookingStaff\\StaffDataOperations\\PatientRegistration.aspx" title="Patient Registration"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+  
+</siteMap>
